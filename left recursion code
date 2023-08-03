@@ -35,3 +35,14 @@ int main()
     else
         printf("\n This Grammar is not LEFT RECURSIVE.\n");
 }
+output:
+Enter the Production as E->E|A: E->E+T|T
+
+Grammar Without Left Recursion:
+
+ E->TE'
+ E'->+TE'|#
+
+--------------------------------
+Process exited after 27.09 seconds with return value 0
+Press any key to continue . . .
