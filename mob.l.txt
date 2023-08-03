@@ -19,3 +19,26 @@ int main()
 printf("\n enter the mobile number:");
 yylex();
 }
+output:
+Microsoft Windows [Version 10.0.22621.1848]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\91730>cd compiler design
+
+C:\Users\91730\compiler design>set path=C:\Users\91730\compiler design\GnuWin32\bin
+
+C:\Users\91730\compiler design>flex mob.l.txt
+
+C:\Users\91730\compiler design>set path=C:\Users\91730\compiler design\MinGW\bin
+
+C:\Users\91730\compiler design>gcc lex.yy.c
+
+C:\Users\91730\compiler design>a
+
+ enter the mobile number:6379638214
+
+ Valid mobile number
+
+67855
+
+ Invalid mobile number
