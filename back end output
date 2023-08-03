@@ -1,0 +1,15 @@
+enter the no: intermediate code:2
+enter the 3 address code:1:a=b+c
+enter the 3 address code:2:d=n*e
+the generated code is:
+ mov b,R0
+ add c,R0
+ mov R0,a
+
+ mov n,R1
+ mul e,R1
+ mov R1,d
+
+--------------------------------
+Process exited after 9.064 seconds with return value 0
+Press any key to continue . . .
