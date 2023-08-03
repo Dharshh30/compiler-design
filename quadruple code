@@ -50,3 +50,16 @@ printf("\n(%d)\t:=\tt%d\t\t%c",m,t-1,line[0]);
 m++;
 return 0;
 }
+
+output:
+Enter string:d=a+b-c
+mem     op      a1      a2      res
+
+(0)     :=      b                t1
+(1)     +       a       t1       t2
+(2)     :=      c                t3
+(3)     -       t2      t3       t4
+(4)     :=      t4              d
+--------------------------------
+Process exited after 4.181 seconds with return value 0
+Press any key to continue . . .
