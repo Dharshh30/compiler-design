@@ -67,3 +67,24 @@ int main()
 	else
 		printf("Reject\n");
 }
+
+output:
+GRAMMAR is -
+E->2E2
+E->3E3
+E->4
+
+stack    input   action
+$       32423$  SHIFT
+$3       2423$  SHIFT
+$32       423$  SHIFT
+$324       23$  REDUCE TO E -> 4
+$32E       23$  SHIFT
+$32E2       3$  REDUCE TO E -> 2E2
+$3E         3$  SHIFT
+$3E3         $  REDUCE TO E -> 3E3
+$E           $  Accept
+
+--------------------------------
+Process exited after 0.06335 seconds with return value 0
+Press any key to continue . . .
