@@ -1,0 +1,18 @@
+%{
+#include <stdio.h>
+
+%}
+url [a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}(\/\S*)?
+space [ \t\n]
+
+%%
+{url} printf("vaild url: %s\n",yytext);
+{space}
+.
+%%
+int yywrap(){}
+int main(){
+printf("enter the url:");
+yylex();
+return 0;
+}
