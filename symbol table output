@@ -1,0 +1,17 @@
+Input the expression ending with $ sign:x=a+b$
+Given Expression:x=a+b
+ Symbol Table display
+Symbol   addr    type
+x        13308960        identifier
+
+ =       13309088        operator
+
+a        13309168        identifier
+
+ +       13309280        operator
+
+b        13309344        identifier
+
+--------------------------------
+Process exited after 15.52 seconds with return value 0
+Press any key to continue . . .
