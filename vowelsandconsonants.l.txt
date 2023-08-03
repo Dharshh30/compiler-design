@@ -23,4 +23,24 @@ yylex();
 printf("Number of vowels are:%d\n",vow_count);
 printf("Number of consonants:%d\n",const_count);
 return 0;
-} 
+}
+output:
+Microsoft Windows [Version 10.0.22621.1848]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\91730>cd compiler design
+
+C:\Users\91730\compiler design>set path=C:\Users\91730\compiler design\GnuWin32\bin
+
+C:\Users\91730\compiler design>flex vowelsandconsonants.l.txt
+
+C:\Users\91730\compiler design>set path=C:\Users\91730\compiler design\MinGW\bin
+
+C:\Users\91730\compiler design>gcc lex.yy.c
+
+C:\Users\91730\compiler design>a
+Enter the string of vowels and consonants:
+hello
+
+Number of vowels are:2
+Number of consonants:3
