@@ -20,3 +20,22 @@ int main()
     printf("Count of \"fact\"= %d \nCount of letter 'i' = %d\n",factcount,icount);  
     return 0;
 }
+
+output:
+Microsoft Windows [Version 10.0.22621.1848]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\91730>cd compiler design
+
+C:\Users\91730\compiler design>set path=C:\Users\91730\compiler design\GnuWin32\bin
+
+C:\Users\91730\compiler design>flex frequency.l.txt
+
+C:\Users\91730\compiler design>set path=C:\Users\91730\compiler design\MinGW\bin
+
+C:\Users\91730\compiler design>gcc lex.yy.c
+
+C:\Users\91730\compiler design>a
+priya
+Count of "fact"= 0
+Count of letter 'i' = 1
