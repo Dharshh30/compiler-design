@@ -1,0 +1,46 @@
+%{
+#include<stdio.h>
+%}
+
+%%
+
+if|else|while|int|switch|for|char { printf("its a keyword");}
+[a-zA-Z0-9]+ { printf("\n%s is IDENTIFIER", yytext);}
+
+%%
+int yywrap( ){}
+int main()
+{
+	while( yylex());
+}
+
+OUTPUT:
+Microsoft Windows [Version 10.0.22621.1848]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\91730>cd compiler design
+
+C:\Users\91730\compiler design>set path=C:\Users\91730\compiler design\GnuWin32\bin
+
+C:\Users\91730\compiler design>flex identifier.l.txt
+
+C:\Users\91730\compiler design>set path=V
+
+C:\Users\91730\compiler design>gcc lex.yy.c
+'gcc' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\91730\compiler design>set path=C:\Users\91730\compiler design\MinGW\bin
+
+C:\Users\91730\compiler design>gcc lex.yy.c
+
+C:\Users\91730\compiler design>a
+if i won i will get a price
+its a keyword
+i is IDENTIFIER
+won is IDENTIFIER
+i is IDENTIFIER
+will is IDENTIFIER
+get is IDENTIFIER
+a is IDENTIFIER
+price is IDENTIFIER
